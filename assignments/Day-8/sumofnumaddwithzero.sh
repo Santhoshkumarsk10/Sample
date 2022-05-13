@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-arr=(0, -1, 2, -3, 1)
+arr=(0 -1 2 -3 1)
 
 len=${#arr[@]}
 echo $len
@@ -19,9 +19,7 @@ do
 			echo $d
                 	if (($d == 0))
 	                then
-				echo ${arr[$i]}
-				echo ${arr[$j]}
-				echo ${arr[$k]}
+				echo "adding numbers equal to zero" ${arr[$i]} ${arr[$j]} ${arr[$k]}
                 	fi
             	done
         done
